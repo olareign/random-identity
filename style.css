@@ -10,6 +10,8 @@
     min-width: 100%;
     padding: 5%;
     transition: all .5s ease-in-out;
+    display: grid;
+    place-items: center;
 }
 
 .userInfo{
@@ -26,6 +28,7 @@
     font-family: sans-serif;
     border-radius: 0.5rem;
     margin: 20px;
+    width: max-content;
 }
 
 .userInfo img{
