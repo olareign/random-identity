@@ -1,0 +1,107 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    background: linear-gradient( #eee,rgb(0, 216, 11));
+    min-height: 100vh;
+    min-width: 100%;
+    padding: 5%;
+    transition: all .5s ease-in-out;
+}
+
+.userInfo{
+    border: 2px solid black;
+    padding: 5%;
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+    box-shadow: inset 8px 4px 4px rgb(163, 162, 162),  8px 4px 10px #000;
+    column-gap: 20px;
+    background: url(https://images.unsplash.com/photo-1601723897234-327147304013?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTV8fGlkZW50aXR5fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60);
+    background-position: center;
+    background-size: cover;
+    font-family: sans-serif;
+    border-radius: 0.5rem;
+    margin: 20px;
+}
+
+.userInfo img{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    border: 1px solid silver;
+    transition: 0.5s ease-in;
+}
+
+.userInfo .content h1{
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+.userInfo .content .info{
+    font-weight: bolder;
+    font-size: 1.2rem;
+    display: grid;
+    grid-template-columns: auto auto;
+    row-gap: 20px;
+    column-gap: 10px;
+}
+
+label>div{
+    padding: 2px 0 2px 12px;
+    font-size: 1rem;
+}
+
+button{
+    padding: 20px 40px;
+    border-radius: 0.5rem;
+    margin: auto;
+    display: block;
+    /* position: absolute; */
+    /* bottom: 50%; */
+    /* left: 50%; */
+    transition: all .5s ease-in-out;
+    font-size: 1.2rem;
+}
+button:hover{
+    background-color: rgb(10, 10, 95);
+    color: #fff;
+}
+
+@media  screen and (max-width: 845px) {
+    .userInfo{
+        display: grid;
+        grid-template-columns: auto;
+        place-items: center;
+        row-gap: 20px;
+        text-align: center;
+        border-radius: 0.5rem;
+        padding: 5%;
+    }
+    .userInfo .content h1{
+        font-size: 200%;
+    }
+    .userInfo #img{
+        width: 40%;
+        height: 90%;
+        border-radius: 50%;
+    }
+    .userInfo .content .info{
+        gap: 20px;
+        overflow: ellipsis;
+    }
+}
+
+
+@media  screen and (max-width: 525px) {
+   
+    
+    label>div{
+        font-size: 70%;
+    }
+    .userInfo .content h1{
+        font-size: 150%;
+    }
+}
